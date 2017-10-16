@@ -16,8 +16,10 @@
 
 char server[25] = "www.escherhomewatch.com";   // Up to 24 characters for the server name
 char controller[30] = "Martin1";  //ID for this sensor controller, up to 29 chars
-const char* ssid = "NETGEAR75";
-const char* password = "braveballoon525";
+// const char* ssid = "NETGEAR75";
+const char* ssid = "wireless";
+// const char* password = "braveballoon525";
+const char* password = "blackjack";
 
 
 int sensorCount = 0;
