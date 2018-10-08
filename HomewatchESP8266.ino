@@ -15,9 +15,9 @@
 #define DEBUG 1         // Conditional Compilation
 
 char server[25] = "www.escherhomewatch.com";   // Up to 24 characters for the server name
-char controller[30] = "Martin1";  //ID for this sensor controller, up to 29 chars
-// const char* ssid = "NETGEAR75";
-const char* ssid = "wireless";
+char controller[30] = "WIPump";  //ID for this sensor controller, up to 29 chars
+// const char* ssid = "NETGEAR75";a
+const char* ssid = "okee";
 // const char* password = "braveballoon525";
 const char* password = "blackjack";
 
@@ -193,8 +193,8 @@ void sendValue(int sensorID, float value) {
     #if defined(DEBUG)
     Serial.println("connection failed");
     #endif
-    for(;;)
-      ;
+    // for(;;)
+    return;
   }
 
   while ((!client.available()) && (fail < 500)) {
@@ -527,4 +527,3 @@ void loop()
   }
 }
  
-
