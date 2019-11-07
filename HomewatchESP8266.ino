@@ -11,13 +11,13 @@
 #define MAX_SENSORS 4
 #define REQUEST_KEY_MAGIC 271
 #define fileKey 12345   //Secret for filing data
-#define ONE_WIRE_PIN 2  //Where the OneWire bus is connected 
+#define ONE_WIRE_PIN 11  //Where the OneWire bus is connected 
 #define DEBUG 1         // Conditional Compilation
 
 char server[25] = "www.escherhomewatch.com";   // Up to 24 characters for the server name
-char controller[30] = "WIPump";  //ID for this sensor controller, up to 29 chars
+char controller[30] = "AKBlueHouse";  //ID for this sensor controller, up to 29 chars
 // const char* ssid = "NETGEAR75";a
-const char* ssid = "okee";
+const char* ssid = "wireless";
 // const char* password = "braveballoon525";
 const char* password = "blackjack";
 
